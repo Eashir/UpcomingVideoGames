@@ -31,7 +31,6 @@ class GameTableViewController: UITableViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		self.view.backgroundColor = ColorPalette.grayColor
-		
 		getGameObjects()
 		createCellHeightsArray()
 		setupCache()
@@ -41,24 +40,22 @@ class GameTableViewController: UITableViewController {
 		super.viewDidAppear(animated)
 		
 		kicksterRefreshControl = PullToKickster(at: .top)
-		
+
 		let parameters = [
 			"api_key":"10466aeae0851fac4b5467674bb3f309ffe650b2" as AnyObject,
-			"filter":"original_release_date:2019-1-1 00:00:00|2019-3-27 00:00:00,platforms:146" as AnyObject,
+			"filter":"original_release_date:1980-1-1 00:00:00|1990-1-1 00:00:00" as AnyObject,
 			"sort":"original_release_date:desc" as AnyObject,
 			"format":"json" as AnyObject
 		]
 		
 		self.tableView.addPullToRefresh(kicksterRefreshControl)  {
-			APIRequestManager.manager.performRequest(.get, requestURL: "https://www.giantbomb.com/api/games/?api_key=10466aeae0851fac4b5467674bb3f309ffe650b2&format=json", params: parameters) { (gameData) in
+			APIRequestManager.manager.performRequest(.get, requestURL: "https://www.giantbomb.com/api/games/", params: parameters) { (gameData) in
 				DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
 					self.tableView.reloadData()
 					self.tableView.endRefreshing(at: .top)
 				}
 			}
-			
 		}
-		
 	}
 	
 	// MARK: - Configure
