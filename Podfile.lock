@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.4.0)
+  - EasyPeasy (1.4.2)
+  - FoldingCell (2.0.3)
+  - lottie-ios (1.5.1)
+  - PullToMakeSoup (2.0):
+    - PullToRefresher (~> 2.0)
+  - PullToRefresher (2.0.2)
+  - Realm (3.3.0):
+    - Realm/Headers (= 3.3.0)
+  - Realm/Headers (3.3.0)
+  - RealmSwift (3.3.0):
+    - Realm (= 3.3.0)
+  - SnapKit (3.2.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - EasyPeasy
+  - FoldingCell (~> 2.0.3)
+  - lottie-ios
+  - PullToMakeSoup (~> 2.0)
+  - RealmSwift
+  - SnapKit (~> 3.2.0)
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  EasyPeasy: 50e7130b61f495ce105796e438d4136e2c8d2cc0
+  FoldingCell: 2f3113051609167776743415fc00ed877ac6d62c
+  lottie-ios: f680a7c4cb7a567ecf258fde0f967913aff111b8
+  PullToMakeSoup: 384a57220e1c197220427494d5959dda73400435
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
+  Realm: 7d74ad6c5020432f58fe5e1df90bb6d97b2c7fef
+  RealmSwift: b2fa31a09c22e246026766557405505eeaad2b01
+  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+
+PODFILE CHECKSUM: 75ea64e24bd014663f83867e36bc46f11baf62c2
+
+COCOAPODS: 1.4.0
