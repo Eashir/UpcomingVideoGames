@@ -178,7 +178,7 @@ class KicksterLogoAnimator: NSObject, RefreshViewAnimator {
     let _ = [
       refreshViewConstraints,
       kicksterLogoImageViewConstraints,
-      ].map{ $0.map { $0.isActive = true } }
+		].map{ $0.map { $0.isActive = true } }
   }
 
 }
